@@ -1,0 +1,2 @@
+if vector is defined as [15:0] in then when it is used it should be from higher to lower as it should follow the direction, 
+  and 15 is the most significant bit.
