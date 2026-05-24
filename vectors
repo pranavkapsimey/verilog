@@ -30,3 +30,13 @@ module top_module(
     assign out_or_logical=a||b;
     assign out_not[5:3]=~b[2:0],out_not[2:0]=~a[2:0];
 endmodule
+
+4.
+module top_module( 
+    input [3:0] in,
+    output out_and,
+    output out_or,
+    output out_xor
+);
+    assign out_and=in[3]&&in[2]&&in[1]&&in[0],out_or=in[3]||in[2]||in[1]||in[0],out_xor=in[3]^in[2]^in[1]^in[0];
+endmodule
